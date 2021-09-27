@@ -8,7 +8,7 @@ const collegeRouter = require('./routes/college-router')
 const studentRouter = require('./routes/student-router')
 
 const app = express()
-const apiPort = process.env.Port || 3000
+const apiPort = process.env.PORT || 3000
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(cors())
