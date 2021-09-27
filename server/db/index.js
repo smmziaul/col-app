@@ -1,7 +1,8 @@
 const mongoose = require('mongoose')
+const URI = "mongodb+srv://admin:admin@cluster0.xdpbv.mongodb.net/college?retryWrites=true&w=majority"
 
 mongoose
-    .connect('mongodb://127.0.0.1:27017/college', { useNewUrlParser: true })
+    .connect(URI, { useNewUrlParser: true })
     .catch(e => {
         console.error('Connection error', e.message)
     })
